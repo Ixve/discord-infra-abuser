@@ -8,6 +8,7 @@ from config import token, link, prefix, ownerid
 from discord.ext import tasks
 
 url = input("URL: ")
+chid = input("Channel ID to send startup msg to: ")
 headers = { 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:99.0) Gecko/20100101 Firefox/99.0' }
 r = requests.get(f"{url}", headers=headers)
 if r.status_code == 200:
@@ -25,7 +26,7 @@ class MyClient(discord.Client):
         print(f'Logged in as: {self.user.name}')
         print(f'ID: {self.user.id}')
         print(f'Target URL: {url}')
-        ready = client.get_channel(PUT YOUR CHANNEL ID HERE!!!)
+        ready = client.get_channel({chid})
         await ready.send(f"Bot ready - Current target is set to: `{url}`")
 
     async def on_message(self, message):
