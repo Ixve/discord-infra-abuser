@@ -21,11 +21,11 @@ def make_string(length):
 
 class MyClient(discord.Client):
     async def on_ready(self):
-        os.system('clear;cls')
+        os.system('clear')
         print(f'Logged in as: {self.user.name}')
         print(f'ID: {self.user.id}')
         print(f'Target URL: {url}')
-        ready = client.get_channel(PUT A CHANNEL ID HERE!!)
+        ready = client.get_channel(PUT YOUR CHANNEL ID HERE!!!)
         await ready.send(f"Bot ready - Current target is set to: `{url}`")
 
     async def on_message(self, message):
@@ -36,8 +36,10 @@ class MyClient(discord.Client):
                     try:
                         await channel.send(f"{url}?{make_string(25)}")
                         await asyncio.sleep(0.5)
-                    except:
-                        print("Error occured - Ignoring like a giga chad.")
+                    except KeyboardInterrupt:
+                        exit()
+                    except discord.errors.Forbidden:
+                        print("Ignoring error like a giga chad")
 
 
 client = MyClient()
