@@ -25,7 +25,7 @@ class MyClient(discord.Client):
         print(f'Logged in as: {self.user.name}')
         print(f'ID: {self.user.id}')
         print(f'Target URL: {url}')
-        ready = client.get_channel(962106381597569086)
+        ready = client.get_channel(PUT A CHANNEL ID HERE!!)
         await ready.send(f"Bot ready - Current target is set to: `{url}`")
 
     async def on_message(self, message):
