@@ -72,7 +72,7 @@ class gangClient(discord.Client):
             await chan.purge()
                               
         if message.content.startswith('!help'):
-            chan = client.get_channel(962375865264660590)
+            chan = client.get_channel({chanid})
             await chan.send("hi welcome to lean inc.\n\n!setup - sets up channels\n!troll - starts the bombardment\n!nuke - deletes all troll channels\n!delmsgs - purges all msgs in main channel")
 
 client = gangClient()
