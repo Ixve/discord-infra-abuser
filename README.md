@@ -4,4 +4,6 @@ A proof of concept for ddosing/dossing websites by abusing Discord embeds.
 I am not responsible what you do with this.
 
 # Using this tool
-In order to use this tool you simply have to create a server and make tons of channels using a selfbot. After that simply run `python3 run.py`, set your target, run `!troll` and just sit there and think about your life decisions. (Ofcourse running after you invite the bot.)
+Go to the developer portal, create a bot and put the bot token inside config.py including your ID.
+
+After that simply run `python3 run.py`, put in your URL and run `!help` for the commands
