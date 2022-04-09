@@ -1,7 +1,7 @@
-# discord-site-ddos-poc
-A proof of concept for ddosing/dossing websites by abusing Discord embeds.
+# The most inefficient Discord infrastructure abuser (TM) (C) (R)
+A proof of concept for ddosing websites by abusing Discord embeds.
 
-I am not responsible what you do with this.
+I am not responsible in any way shape or form with what you do with this.
 
 # Using this tool
 Go to the developer portal, create a bot and put the bot token inside config.py including your ID.
