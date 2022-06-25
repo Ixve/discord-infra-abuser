@@ -47,7 +47,7 @@ class gangClient(discord.Client):
                     except discord.errors.Forbidden:
                         print("[403] Ignoring error like a giga chad")
                     except discord.errors.NotFound:
-                        print("[404] Bot attempted to send message in unknown channel (Good thing if you're nuking).
+                        print("[404] Bot attempted to send message in unknown channel (Good thing if you're nuking).")
                     except AttributeError:
                         print("[AttributeError] Bot tried to send message in category channel, lol what an idiot.")
                         
