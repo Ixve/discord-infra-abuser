@@ -1,3 +1,6 @@
+# Note
+This PoC is very old, and Discord has most definitely fixed it by now, which is why this is getting archived.
+
 # The most inefficient Discord infrastructure abuser (TM) (C) (R)
 A proof of concept for ddosing websites by abusing Discord embeds.
 
